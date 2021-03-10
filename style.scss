@@ -43,7 +43,7 @@ form {
 
     & .strengthBar {
         position: absolute;
-        bottom: 14%;
+        bottom: 0;
         left: 0;
         height: 10px;
         background: rgb(248, 175, 58);
@@ -66,9 +66,16 @@ form {
         right: -12%;
         transform: translate(-50%, -50%);
         transition: 0.1s ease;
+        cursor: pointer;
 
         &:hover {
             box-shadow: 2px 2px 5px rgb(109, 109, 109);
+        }
+
+        &:active,
+        &:focus-visible,
+        &:focus {
+            outline: none;
         }
     }
 
@@ -78,7 +85,7 @@ form {
         box-shadow: 2px 2px 8px rgb(195, 195, 195);
         border-radius: 1rem;
         border: none;
-        margin: 2rem 0 1rem 0;
+        margin: 2rem 0 0 0;
         position: relative;
 
 
@@ -97,7 +104,7 @@ form {
     padding: 1rem;
 
     & label {
-        font-size: 20px;
+        font-size: 24px;
         margin: 1rem 0 0 1rem;
 
     }
@@ -159,7 +166,7 @@ form {
         flex-direction: column;
 
         & .rangeBar {
-            width: 70%;
+            width: 100%;
 
             &:focus,
             &:focus-visible,
@@ -175,7 +182,6 @@ form {
                 border-radius: 50%;
                 background: $lightGreen;
                 border: 2px solid black;
-                box-shadow: 2px 2px 5px $lightGreen;
                 cursor: pointer;
             }
 
@@ -196,8 +202,9 @@ form {
             padding: 0.5rem 1rem;
             border-radius: 1rem;
             border: none;
-            margin: 1rem 2rem 1rem 0;
+            margin: 1rem 2rem 1rem 1rem;
         }
+
 
 
     }
@@ -216,10 +223,16 @@ form {
         transition: 0.3s ease;
         position: relative;
         overflow: hidden;
-
+        cursor: pointer;
 
         &:hover {
             box-shadow: 2px 2px 5px rgb(109, 109, 109);
+        }
+
+        &:active,
+        &:focus-visible,
+        &:focus {
+            outline: none;
         }
     }
 }
