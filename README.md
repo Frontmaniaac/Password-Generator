@@ -1,4 +1,4 @@
 **Password generator with strength bar and custom password options**
-(./showWebste.png)
+(showWebste.png)
 
 HTML + SCSS + JS
